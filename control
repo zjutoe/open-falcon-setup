@@ -1,0 +1,9 @@
+#!/bin/bash
+
+cmd=$1
+
+for c in agent  dashboard  graph  hbs  query  transfer; do 
+
+    ( cd $c; ./control $cmd )
+
+done
